@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- WELCOME SCREEN -->
+<header id="welcome">
+  <div class="welcome-text">
+    <h1>HALLO GUYS</h1>
+    <p>Selamat Datang di Website Saya</p>
+    <a href="javascript:void(0)" class="enter-btn" onclick="masukWebsite()">
+      Kunjungi Website
+    </a>
+  </div>
+</header>
+
+<!--Navbar-->
+<nav class="navbar">
+    
+    <div class="logo">My Portofolio</div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!--Tambahan js untuk menu hamburger-->
+<script>
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("nav-menu");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+function masukWebsite(){
+
+  document
+  .getElementById("welcome")
+  .classList.add("hide-welcome");
+
+}
+</script>
+
+<!-- Home -->
+<section id="home" class="home">
+    <div class="home-text">
+        <span>Halo, Saya</span>
+        <h1>Annisa Ulya Laili</h1>
+        <p>Mahasiswa Informatika | Universitas Samudra</p>
+    </div>
+
+     <div class="home-img">
+        <img src="foto1.jpeg" alt="Foto Profil" class="profile-img">    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container">
+  <div class="about-container">
+    <h2 class="text-center">About Me</h2>
+
+    <div class="about-content">
+
+      <!--foto disebalah kiri-->
+    <div class="about-img">
+      <img src="foto2.jpg" alt="Foto About" class="profile-img">
+    </div>
+
+     <!-- kanan: teks -->
+    <div class="about-text">
+      <p>Saya adalah Mahasiswa Universitas Samudra, Jurusan Informatika yang memiliki minat dalam bidang web development dan teknologi informasi.</p>
+      <p>Selain aktif dalam perkuliahan, saya juga memiliki pengalaman dalam menjalankan usaha kuliner secara mandiri.
+        Melalui kegiatan tersebut, saya belajar tentang managemen usaha, strategi pemasaran, 
+        serta pentingnya komunikasi yang baik dengan pelanggan.</p>
+      <p>Saya memiliki semangat untuk terus belajar dan berkembang, baik dalam bidang teknologi maupun kewirausahaan.
+        Kedepannya saya memiliki tujuan untuk menjadi seorang web developer yang profesional serta mampu mengambangkan 
+        usaha mandiri yang berkelanjutan.</p>
+
+    <!-- tombol download cv -->
+    <div class="about-btn">
+    <a href="#" onclick="konfirmasiCV()">Download CV</a>
+    </div>
+
+<script>
+function konfirmasiCV() {
+    let pilihan = confirm("Apakah Anda ingin mendownload CV?");
+
+    if (pilihan) {
+        const link = document.createElement("a");
+        link.href = "CV_Annisa Ulya Laili.pdf";
+        link.download = "CV_Annisa_Ulya_Laili.pdf";
+        link.click();
+    } else {
+        alert("Download dibatalkan");
+    }
+}
+</script>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+    <div class="container">
+      <h2 class="text-center">Portofolio</h2>
+
+    <div class="portfolio-grid">
+
+<!-- project 1 -->
+    <div class="card">
+      <img src="website daftar menu.png" alt="Website Menu">
+      <h4>Website Daftar Menu</h4>
+        <p>Website sederhana yang digunakan untuk menampilkan daftar menu cemilan beserta harga dan deskripsi produk.</p>
+        <a href="https://annisaulya26.github.io/daftar-menu/" 
+            target="_blank" 
+            class="ig-btn">Lihat Project</a>
+    </div>
+
+<!-- project 2 -->
+    <div class="card">
+      <img src="web login.png" alt="Form login">
+      <h4>Web Form Login</h4>
+        <p>Website form login menggunakan HTML, dan CSS yang dilengkapi validasi username, password dan tombol login.</p>
+        <a href="https://annisaulya26.github.io/web-login/" 
+            target="_blank" 
+            class="ig-btn">Lihat Project</a>
+    </div>
+
+    <!-- project 3 -->
+    <div class="card">
+      <img src="CorelDRAW2.jpeg" alt="Design CorelDRAW">
+      <h4>Design Grafis Menggunakan CorelDRAW</h4>
+        <p>Membuat berbagai desain grafis sederhana menggunakan CorelDRAW sebagai bagian dari pelatihan desain grafis untuk melatih kreativitas dan kemampuan pengolahan visual.</p>
+        <a href="Sertifikat Design Grafis.pdf" 
+            target="_blank" 
+            class="ig-btn">Sertifikat</a>
+        <a href="CorelDRAW2.jpeg" 
+            target="_blank" 
+            class="ig-btn">Lihat Project</a>
+    </div>
+    
+<!-- project 4 -->
+    <div class="card">
+      <img src="Design Figma2.jpeg" alt="Design Figma">
+      <h4>UI/UX Design Aplikasi Biodata</h4>
+        <p>Membuat prototype aplikasi biodata sederhana berbasis Android menggunakan Figma dengan beberapa halaman yang saling terhubung</p>
+        <a href="https://www.figma.com/design/YHNWfbIeuc6rShd0wz6Neb/Untitled?node-id=0-1&t=Kg4HgzV5uSkBlVoM-1" 
+            target="_blank" 
+            class="ig-btn">Lihat Project</a>
+    </div>
+
+<!-- project  5 -->
+    <div class="card">
+      <img src="mengajar.jpeg" alt="Mengajar">
+      <h4>Mengajar TK & Les Private</h4>
+        <p>Pengalaman mengajar anak-anak usia dini dan memberikan les private dengan metode belajar yang interaktif.</p>
+        <a href="mengajar.jpeg" 
+            target="_blank" 
+            class="ig-btn">Lihat Kegiatan</a>
+    </div>
+
+<!-- project 6 -->
+    <div class="card">
+      <img src="bisnis_cemilan.jpeg" alt="Bisnis">
+      <h4>Bisnis Cemilan</h4>
+        <p>Usaha kecil di bidang kuliner dengan menjual berbagai jenis makanan dan minuman seperti dimsum, tahuwalek, sostel, dan estea.</p>
+        <a href="https://www.instagram.com/dapurcemilan.ofc/" 
+            target="_blank" 
+            class="ig-btn">Kunjungi Instagram</a>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills-section">
+
+    <div class="title">
+        <h2>Skills</h2>
+    </div>
+
+    <div class="skills-container">
+
+        <!-- HARD SKILLS -->
+        <div class="skills-card">
+            <h3>Hard Skills</h3>
+
+            <div class="skill-item">
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="skill-item">
+                <p>Python</p>
+            </div>
+
+            <div class="skill-item">
+                <p>C++</p>
+            </div>
+
+            <div class="skill-item">
+                <p>CorelDRAW</p>
+            </div>
+
+            <div class="skill-item">
+                <p>Figma</p>
+            </div>
+        </div>
+
+        <!-- SOFT SKILLS -->
+        <div class="skills-card">
+            <h3>Soft Skills</h3>
+
+            <div class="skill-item">
+                <p>Komunikasi</p>
+            </div>
+
+            <div class="skill-item">
+                <p>Kerja Tim</p>
+            </div>
+
+            <div class="skill-item">
+                <p>Manajemen Waktu</p>
+            </div>
+
+            <div class="skill-item">
+                <p>Tanggung Jawab</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+
+      <a href="mailto:aulyalaili@email.com">Email</a>
+      <a href="https://www.instagram.com/annisaulya__" target="_blank">Instagram</a>
+      <a href="https://github.com/Annisaulya26" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/annisaulyalaili" target="_blank">LinkedIn</a>
+      <a href="https://youtube.com/in/AnnisaUlyaLaili-yh5nk" target="_blank">YouTube</a><br><br>
+
+<!--form-->
+  <p>Silakan hubungi saya melalui form di bawah ini</p>
+
+<form action="https://formsubmit.co/aulyalaili@gmail.com" method="POST">
+    <input type="text" name="nama" placeholder="Nama" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="pesan" placeholder="Pesan" required></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://annisaulya26.github.io/portofolio/">
+    <button type="submit">Kirim</button>
+</form>
+
+</section>
+
+<footer>
+    <p>© 2026 Annisa Ulya Laili</p>
+</footer>
+
+</body>
+</html>
+
+
