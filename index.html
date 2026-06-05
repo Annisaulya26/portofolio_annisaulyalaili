@@ -94,21 +94,6 @@ function masukWebsite(){
     <a href="#" onclick="konfirmasiCV()">Download CV</a>
     </div>
 
-<script>
-function konfirmasiCV() {
-    let pilihan = confirm("Apakah Anda ingin mendownload CV?");
-
-    if (pilihan) {
-        const link = document.createElement("a");
-        link.href = "CV_Annisa Ulya Laili.pdf";
-        link.download = "CV_Annisa_Ulya_Laili.pdf";
-        link.click();
-    } else {
-        alert("Download dibatalkan");
-    }
-}
-</script>
-
     </div>
   </div>
 </div>
@@ -144,7 +129,7 @@ function konfirmasiCV() {
     <!-- project 3 -->
     <div class="card">
       <img src="CorelDRAW2.jpeg" alt="Design CorelDRAW">
-      <h4>Design Grafis Menggunakan CorelDRAW</h4>
+      <h4>Design Grafis</h4>
         <p>Membuat berbagai desain grafis sederhana menggunakan CorelDRAW sebagai bagian dari pelatihan desain grafis untuk melatih kreativitas dan kemampuan pengolahan visual.</p>
         <a href="Sertifikat Design Grafis.pdf" 
             target="_blank" 
@@ -157,8 +142,8 @@ function konfirmasiCV() {
 <!-- project 4 -->
     <div class="card">
       <img src="Design Figma2.jpeg" alt="Design Figma">
-      <h4>UI/UX Design Aplikasi Biodata</h4>
-        <p>Membuat prototype aplikasi biodata sederhana berbasis Android menggunakan Figma dengan beberapa halaman yang saling terhubung</p>
+      <h4>UI/UX Aplikasi Biodata</h4>
+        <p>Membuat prototype aplikasi biodata sederhana berbasis Android menggunakan Figma dengan beberapa halaman yang saling terhubung.</p>
         <a href="https://www.figma.com/design/YHNWfbIeuc6rShd0wz6Neb/Untitled?node-id=0-1&t=Kg4HgzV5uSkBlVoM-1" 
             target="_blank" 
             class="ig-btn">Lihat Project</a>
@@ -255,7 +240,6 @@ function konfirmasiCV() {
       <a href="https://www.instagram.com/annisaulya__" target="_blank">Instagram</a>
       <a href="https://github.com/Annisaulya26" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/annisaulyalaili" target="_blank">LinkedIn</a>
-      <a href="https://youtube.com/in/AnnisaUlyaLaili-yh5nk" target="_blank">YouTube</a><br><br>
 
 <!--form-->
   <p>Silakan hubungi saya melalui form di bawah ini</p>
@@ -265,7 +249,7 @@ function konfirmasiCV() {
     <input type="email" name="email" placeholder="Email" required>
     <textarea name="pesan" placeholder="Pesan" required></textarea>
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://annisaulya26.github.io/portofolio/">
+    <input type="hidden" name="_next" value="https://annisaulya26.github.io/portofolio_annisaulyalaili/succes.html">
     <button type="submit">Kirim</button>
 </form>
 
@@ -275,6 +259,20 @@ function konfirmasiCV() {
     <p>© 2026 Annisa Ulya Laili</p>
 </footer>
 
+<script>
+function konfirmasiCV() {
+    let pilihan = confirm("Apakah Anda ingin mendownload CV?");
+
+    if (pilihan) {
+        const link = document.createElement("a");
+        link.href = "CV_Annisa Ulya Laili.pdf";
+        link.download = "CV_Annisa_Ulya_Laili.pdf";
+        link.click();
+    } else {
+        alert("Download dibatalkan");
+    }
+}
+</script>
 </body>
 </html>
 
